@@ -27,7 +27,7 @@ class examinator extends BaseController
         }
         
         $data = [
-            'title' => 'Overzicht examinator',
+            'title' => 'Overzicht Afgenomen Examens Examinatoren',
             'rows' => $rows
         ];
 
