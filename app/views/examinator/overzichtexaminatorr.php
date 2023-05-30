@@ -19,9 +19,6 @@
             <th>Tussenvoegsel</th>
             <th>Achternaam</th>
             <th>Mobiel</th>
-            <th>Datum in dienst</th>
-            <th>Aantal sterren</th>
-            <th>Voertuigen</th>
         </thead>
         <tbody>
             <?= $data['rows']; ?>
