@@ -18,14 +18,16 @@ class examinator extends BaseController
         foreach ($result as $examinator) {
             $rows .= "<tr>
                         <td>$examinator->Voornaam</td>
-                        <td>$examinator->Tussenvoegsel</td>
-                        <td>$examinator->Achternaam</td>
-                        <td>$examinator->Mobiel</td>         
+                        <td>$examinator->Datum</td>
+                        <td>$examinator->Rijbewijscategorie</td>
+                        <td>$examinator->Rijschool</td>  
+                        <td>$examinator->Stad</td>
+                        <td>$examinator->UitslagExamen</td>       
                       </tr>";
         }
         
         $data = [
-            'title' => 'examinators in dienst',
+            'title' => 'Overzicht examinator',
             'rows' => $rows
         ];
 

@@ -11,30 +11,16 @@ class examinatorModel
 
     public function getexaminator()
     {
-        $sql = "SELECT Id
-                      ,Voornaam
-                      ,Tussenvoegsel
-                      ,Achternaam
-                      ,Mobiel
-                FROM  examinator";
+        $sql = "SELECT
+                      Voornaam
+                      ,Datum
+                      ,Rijbewijscategorie
+                      ,Rijschool
+                      ,Stad
+                      ,UitslagExamen
+                FROM  examinator, overzicht";
 
         $this->db->query($sql);
         return $this->db->resultSet();
-    }
-
-    
-    public function getexaminatorById($Id)
-    {
-        $sql = "SELECT Voornaam
-                      ,Tussenvoegsel
-                      ,Achternaam
-                      ,DatumInDienst
-                      ,AantalSterren
-                FROM  examinator
-                WHERE Id = $Id";
-
-        $this->db->query($sql);
-
-        return $this->db->single();
     }
 }

@@ -15,10 +15,12 @@
 
     <table>
         <thead>
-            <th>Voornaam</th>
-            <th>Tussenvoegsel</th>
-            <th>Achternaam</th>
-            <th>Mobiel</th>
+            <th>Naam Examinator</th>
+            <th>Datum Examen</th>
+            <th>Rijbewijscategorie</th>
+            <th>Rijschool</th>
+            <th>Stad</th>
+            <th>Uitslag Examen</th>
         </thead>
         <tbody>
             <?= $data['rows']; ?>
